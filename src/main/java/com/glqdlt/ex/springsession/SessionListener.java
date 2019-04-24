@@ -11,6 +11,8 @@ import javax.servlet.http.HttpSessionListener;
  * @author Jhun
  * @see <a href = 'https://stackoverflow.com/questions/36795678/how-to-enable-session-and-set-session-timeout-in-spring-security'>https://stackoverflow.com/questions/36795678/how-to-enable-session-and-set-session-timeout-in-spring-security</a>
  * @see <a href = 'http://dveamer.github.io/backend/PreventDuplicatedLogin.html'>http://dveamer.github.io/backend/PreventDuplicatedLogin.html</a>
+ * @see <a href = 'https://iwan2fly.tistory.com/74'>https://iwan2fly.tistory.com/74</a>
+ * @see <a href = 'https://www.mkyong.com/servlet/a-simple-httpsessionattributelistener-example/'>https://www.mkyong.com/servlet/a-simple-httpsessionattributelistener-example/</a>
  * 2019-04-24
  */
 @Slf4j
