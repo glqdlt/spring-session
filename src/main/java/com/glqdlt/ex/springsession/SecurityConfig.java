@@ -24,10 +24,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .anyRequest()
                 .authenticated()
-            .and()
+                .and()
                 .sessionManagement()
                 .maximumSessions(1) // 허용 인증 session 의 최대치
-                .maxSessionsPreventsLogin(true); // true : 기존 로그인 session 만 허용, false : 기존 로그인 session 은 destroyed 되고 신규 로그인 session 을 등록
+                .maxSessionsPreventsLogin(false) // true : 기존 로그인 session 만 허용, false : 기존 로그인 session 은 destroyed 되고 신규 로그인 session 을 등록. 기존 사용자는 로그인이 해제된 걸 안내되는 곳으로 이동됨
+        ;
+//                .expiredUrl("/expire-alert.html") session prevents login 이 false로 되었을 시에, 기존 로그인 사용자가 다른 사용자가 로그인해서 팅겼다는 걸 안내 받을 URL
 
     }
 
